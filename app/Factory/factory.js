@@ -5,7 +5,7 @@ class Factory {
   constructor(name) {
     const _name = name;
 
-    this.createText = (type, customArguments) => {
+    this.createText = (type, ...customArguments) => {
       if(!type) {
         return null;
       }
@@ -14,10 +14,10 @@ class Factory {
 
       switch(type) {
         case types.ARTICLE:
-          text = new Article()
+          text = new Article(customArguments)
           break;
         case types.PARAGRAPH:
-          text = new Paragraph()
+          text = new Paragraph(customArguments)
           break;
         default:
           text = null;
