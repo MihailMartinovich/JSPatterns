@@ -3,7 +3,7 @@ const handler = {
     const startDate = new Date();
     console.log('Called', target, ' at ', startDate);
 
-    return startDate;
+    return target.call(thisArg ,...argumentsList);
   },
 }
 
