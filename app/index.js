@@ -5,6 +5,7 @@ import runSingletonExample from './Singleton/index.js';
 import runAdapterExample from './Adapter/index.js';
 import runCompositeExample from './Composite/index.js';
 import runDecoratorExample from './Decorator/index.js';
+import runFacadeExample from './Facade/index.js';
 
 runFactoryExample();
 
@@ -17,3 +18,5 @@ runAdapterExample();
 runCompositeExample();
 
 runDecoratorExample();
+
+runFacadeExample();
