@@ -4,6 +4,7 @@ import runPrototypeExample from './Prototype/index.js';
 import runSingletonExample from './Singleton/index.js';
 import runAdapterExample from './Adapter/index.js';
 import runCompositeExample from './Composite/index.js';
+import runDecoratorExample from './Decorator/index.js';
 
 runFactoryExample();
 
@@ -14,3 +15,5 @@ runSingletonExample();
 runAdapterExample();
 
 runCompositeExample();
+
+runDecoratorExample();

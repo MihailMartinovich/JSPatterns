@@ -9,9 +9,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "args": [
-        "--experimental-modules"
-      ],
+      "args": [],
       "program": "${workspaceFolder}/app/index.js"
     }
   ]

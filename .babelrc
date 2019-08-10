@@ -1,9 +1,9 @@
 {
   "presets": [],
   "plugins": [
-    ["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": false, "experimentalDecorators": true }],
+    ["@babel/plugin-proposal-decorators", { "legacy": true, "experimentalDecorators": true }],
     "@babel/plugin-proposal-optional-chaining",
     "@babel/plugin-transform-modules-commonjs",
-    "@babel/plugin-proposal-class-properties"
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ]
 }
