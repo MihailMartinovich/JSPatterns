@@ -6,6 +6,7 @@ import runAdapterExample from './Adapter/index.js';
 import runCompositeExample from './Composite/index.js';
 import runDecoratorExample from './Decorator/index.js';
 import runFacadeExample from './Facade/index.js';
+import runFlyWeightExample from './FlyWeight/index.js';
 
 runFactoryExample();
 
@@ -20,3 +21,5 @@ runCompositeExample();
 runDecoratorExample();
 
 runFacadeExample();
+
+runFlyWeightExample();

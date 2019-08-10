@@ -2,8 +2,6 @@ import types from './Constants/types';
 import settings from './Constants/settings';
 import Orm from './Classes/orm';
 
-
-
 const runFacadeExample = () => {
   const ormMysql = new Orm(
     settings.MY_SQL_URL,
