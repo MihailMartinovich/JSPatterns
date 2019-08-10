@@ -8,6 +8,7 @@ import runDecoratorExample from './Decorator/index.js';
 import runFacadeExample from './Facade/index.js';
 import runFlyWeightExample from './FlyWeight/index.js';
 import runProxyExample from './Proxy/index.js';
+import runChainOfResponsibilityExample from './ChainOfResponsibility/index.js';
 
 runFactoryExample();
 
@@ -26,3 +27,5 @@ runFacadeExample();
 runFlyWeightExample();
 
 runProxyExample();
+
+runChainOfResponsibilityExample()
