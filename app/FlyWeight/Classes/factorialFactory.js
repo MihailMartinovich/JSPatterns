@@ -8,23 +8,24 @@ class FactorialFactory {
   }
 
   calculate(number) {
-    if(number < 0) {
+    if(!Number.isInteger(number) || (Number.isInteger(number) && number < 0)) {
       return null;
     }
 
-    let factorial = this.calculatedResults.get(number);
+    let existingFactorial = this.calculatedResults.get(number);
 
-    factorial = factorial
-      ? factorial.value
-      : number * this.calculate(number-1);
+    if(existingFactorial) {
+      console.log(`Value ${existingFactorial.value} obtained from Cache for number ${existingFactorial.number}.`);
 
-    if(this.calculatedResults.has(number)) {
-      console.log(`Value ${factorial} obtained from Cache for number ${number}.`);
+      return existingFactorial;
     } else {
-      this.calculatedResults.set(number, new Factorial(number, factorial));
-    }
+      const value = number * this.calculate(number-1).value;
+      const calculatedFactorial = new Factorial(number, value);
 
-    return factorial;
+      this.calculatedResults.set(number, calculatedFactorial);
+
+      return calculatedFactorial;
+    }
   }
 }
 
