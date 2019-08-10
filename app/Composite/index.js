@@ -3,7 +3,7 @@ import { Composite, Leaf, Node } from './Classes/index.js';
 const runCompositeExample = () => {
   const root = new Composite('root');
   const leftLeaf = new Leaf('leftLeaf');
-  const rightComposite = new Composite('rightComposite')
+  const rightComposite = new Composite('rightComposite');
 
   root.addChild(leftLeaf);
   root.addChild(rightComposite);
