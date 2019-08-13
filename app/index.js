@@ -11,6 +11,7 @@ import runProxyExample from './Proxy/index.js';
 import runChainOfResponsibilityExample from './ChainOfResponsibility/index.js';
 import runCommandExample from './Command/index.js';
 import runIteratorExample from './Iterator/index.js';
+import runMediatorExample from './Mediator/index';
 
 runFactoryExample();
 
@@ -35,3 +36,5 @@ runChainOfResponsibilityExample();
 runCommandExample();
 
 runIteratorExample();
+
+runMediatorExample();
