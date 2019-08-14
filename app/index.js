@@ -13,6 +13,7 @@ import runCommandExample from './Command/index.js';
 import runIteratorExample from './Iterator/index.js';
 import runMediatorExample from './Mediator/index';
 import runObserverExample from './Observer/index';
+import runStateExample from './State/index';
 
 runFactoryExample();
 
@@ -41,3 +42,5 @@ runIteratorExample();
 runMediatorExample();
 
 runObserverExample();
+
+runStateExample();
