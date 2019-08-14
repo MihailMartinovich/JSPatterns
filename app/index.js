@@ -12,6 +12,7 @@ import runChainOfResponsibilityExample from './ChainOfResponsibility/index.js';
 import runCommandExample from './Command/index.js';
 import runIteratorExample from './Iterator/index.js';
 import runMediatorExample from './Mediator/index';
+import runObserverExample from './Observer/index';
 
 runFactoryExample();
 
@@ -38,3 +39,5 @@ runCommandExample();
 runIteratorExample();
 
 runMediatorExample();
+
+runObserverExample();
