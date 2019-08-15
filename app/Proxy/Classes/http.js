@@ -9,6 +9,7 @@ class HTTP {
 
   get(url){
     console.log(`GET: ${this.baseUrl + url}`);
+    
     return {};
   }
 

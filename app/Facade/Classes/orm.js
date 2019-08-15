@@ -13,6 +13,9 @@ class Orm {
       case types.POSTGRE_SQL:
         this.connection = new PostgreSql(url, username, password);
         break;
+      default:
+        this.connection = {};
+        break;
     }
   }
 

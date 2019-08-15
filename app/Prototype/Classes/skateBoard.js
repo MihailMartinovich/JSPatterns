@@ -7,8 +7,8 @@ function SkateBoard(wheelsNumber, type) {
 
 SkateBoard.prototype = {
   wheelsNumber: 0,
-  ride: function() {
-    console.log(`Ride on ${ this.type.description } on ${this.wheelsNumber} wheels`)
+  ride() {
+    console.log(`Ride on ${this.type.description} on ${this.wheelsNumber} wheels`)
   }
 }
 

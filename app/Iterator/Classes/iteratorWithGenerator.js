@@ -6,11 +6,11 @@ class IteratorWithGenerator {
 
     let index = 0;
 
-    return (function*() {
+    return (function *() {
       while(index < collection.length) {
         yield collection[index++];
       }
-    })()
+    }())
   }
 }
 

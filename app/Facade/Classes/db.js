@@ -12,18 +12,18 @@ class Db {
     return this._type.description;
   }
 
-  makeConnection(url, options) {
+  makeConnection(url) {
     this._connectionId = Db.idGenerator.next().value;
     
     console.log(`Connection ${this.type} to ${url} established with id ${this._connectionId},
       using ${this._username}/${this._password}`);
   }
 
-  static idGenerator = (function*() {
+  static idGenerator = (function *() {
     while(true) {
       yield ++Db.currentId;
     }
-  })()
+  }())
 }
 
 Db.currentId = 0;

@@ -2,9 +2,9 @@ import Green from './green';
 import Red from './red';
 
 class TrafficLight {
-  constructor(name){
+  constructor(){
     this._states = [new Green(), new Red()];
-    this._currentState = this._states[0];
+    [this._currentState] = this._states;
   }
 
   changeLight() {
@@ -14,7 +14,7 @@ class TrafficLight {
     const nextIndex = currentStateIndex + 1;
 
     if(nextIndex >= statesLength) {
-      this._currentState = this._states[0];
+      [this._currentState] = this._states;
     } else {
       this._currentState = this._states[nextIndex];
     }

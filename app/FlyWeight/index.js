@@ -1,5 +1,4 @@
 import {
-  Factorial,
   FactorialFactory
 } from './Classes/index.js';
 

@@ -1,4 +1,4 @@
-import { Book, HardboundBook } from "./Classes/index";
+import { Book, HardboundBook } from './Classes/index';
 
 
 const runDecoratorExample = () => {

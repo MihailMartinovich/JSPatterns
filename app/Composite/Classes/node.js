@@ -1,9 +1,11 @@
 const printNode = (node) => {
   let printedTree = `--${node.name}(${node.type})--\n`;
 
-  node.children && node.children.forEach(item => {
-    printedTree += printNode(item, printedTree);
-  });
+  if(node.children) {
+    node.children.forEach(item => {
+      printedTree += printNode(item, printedTree);
+    });
+  }
   
   return printedTree;
 }
@@ -22,17 +24,19 @@ class Node {
     return this._type;
   }
 
-  addChild(child) { }
+  addChild() { }
 
-  removeChildByIndex(index) { }
+  removeChildByIndex() { }
 
-  getChildByIndex(index) {}
+  getChildByIndex() {}
 
-  get childrenNumber() {}
+  get childrenNumber() {
+    return 0;
+  }
 
   static printTree(root) {
     if(!root) {
-      return;
+      return '';
     }
 
     const printedTree = printNode(root);

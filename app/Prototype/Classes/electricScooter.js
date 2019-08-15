@@ -7,17 +7,17 @@ function ElectricScooter(wheelsNumber) {
 
 ElectricScooter.prototype = Object.create(SkateBoard.prototype, {
   ride: {
-    value: function() {
+    value(...rest) {
       this.turnEngineOn();
-      SkateBoard.prototype.ride.apply(this, arguments);
+      SkateBoard.prototype.ride.apply(this, rest);
     }, 
     enumerable: true, 
     configurable: true, 
     writable: true
   },
   turnEngineOn: {
-    value: function() {
-      console.log(`${ this.type.description }'s engine is turned on.`);
+    value() {
+      console.log(`${this.type.description}'s engine is turned on.`);
     }, 
     enumerable: true, 
     configurable: true, 

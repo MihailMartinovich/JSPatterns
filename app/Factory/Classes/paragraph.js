@@ -1,7 +1,9 @@
 import types from '../Constants/types.js';
 
 class Paragraph {
-  constructor(customArguments) {
+  constructor(...customArguments) {
+    console.log(customArguments);
+    
     const _type = types.PARAGRAPH;
 
     this.getType = () => {

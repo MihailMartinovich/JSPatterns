@@ -1,6 +1,7 @@
 function readonly(value) {
   return function(target, key, descriptor) {
     descriptor.writable = !value;
+    
     return descriptor;
   }
 }
