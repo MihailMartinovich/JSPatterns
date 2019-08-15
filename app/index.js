@@ -14,6 +14,7 @@ import runIteratorExample from './Iterator/index.js';
 import runMediatorExample from './Mediator/index';
 import runObserverExample from './Observer/index';
 import runStateExample from './State/index';
+import runStrategyExample from './Strategy/index';
 
 runFactoryExample();
 
@@ -44,3 +45,5 @@ runMediatorExample();
 runObserverExample();
 
 runStateExample();
+
+runStrategyExample();
